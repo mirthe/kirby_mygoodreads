@@ -21,6 +21,8 @@ Include the snippet to display your books on a page
 
 ## Example 
 
+https://mirthe.org/boeken
+
 <img src="example.png" alt="Example of books read">
 
 ## Todo
