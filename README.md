@@ -5,7 +5,7 @@ This plugin allows you to show recent posts for a Goodreads account on your Kirb
 ## Git submodule
 
 ```
-git submodule add https://github.com/mirthe/kirby_goodreads site/plugins/goodreads
+git submodule add https://github.com/mirthe/kirby_mygoodreads site/plugins/mygoodreads
 ```
 
 ## Usage
