@@ -1,0 +1,13 @@
+{
+    "name": "mirthe/mygoodreads",
+    "description": "Show recently read books for a Goodreads account",
+    "keywords": ["kirby-plugin", "goodreads", "books", "history", "log"],
+    "type": "kirby-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mirthe Valentijn",
+            "email": "me@Mirthe.org"
+        }
+    ]
+}
