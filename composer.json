@@ -1,6 +1,7 @@
 {
     "name": "mirthe/mygoodreads",
     "description": "Show recently read books for a Goodreads account",
+    "homepage": "https://github.com/mirthe/mygoodreads",
     "keywords": ["kirby-plugin", "goodreads", "books", "history", "log"],
     "type": "kirby-plugin",
     "license": "MIT",
