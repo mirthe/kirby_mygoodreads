@@ -30,10 +30,10 @@
             <div class="nowrap" style="float: right">
                 <?php $r = $item->user_rating;
                 for ($i = 1; $i <= $r; $i++) {
-                    echo '<i class="fa fa-star fa-active"></i>';
+                    echo '<i class="fa-solid fa-star"></i>';
                 }
                 for ($j = $i; $j < 6; $j++) {
-                    echo '<i class="fa fa-star fa-inactive"></i>';
+                    echo '<i class="fa-regular fa-star"></i>';
                 } ?>
             </div>
 
