@@ -37,16 +37,18 @@
                 } ?>
             </div>
 
-            <?php if (strlen($item->user_read_at)): ?>
-                <span style="color: silver"><?= strftime("%e %b %Y", strtotime($item->user_read_at)) ?></span><br>
-            <?php else: ?>
-                <span style="color: silver" title="Goodreads doet soms rare dingen met de leesdatum, dit is de datum toegevoegd aan mijn profiel"><?= strftime("%e %b %Y", strtotime($item->user_date_added)) ?></span><br>
+            <?php $formatter = new IntlDateFormatter('nl_NL', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
+            if (strlen($item->user_read_at)): ?>
+                <span style="color: silver"><?= $formatter->format(strtotime($item->user_read_at)) ?></span><br>
+            <?php else:
+                // Goodreads doet soms rare dingen met de leesdatum, dit is de datum toegevoegd aan mijn profiel ?>
+                <span style="color: silver"><?= $formatter->format(strtotime($item->user_date_added)) ?></span><br>
             <?php endif ?>
 
         <?php endif ?>
         </p>
 
-        <?= $item->user_review ?> 
+        <?= $item->user_review ?>
     </div>
 
 </div>
