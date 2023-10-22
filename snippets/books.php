@@ -27,7 +27,7 @@
 
         <?php else: ?>
 
-            <div class="nowrap" style="float: right">
+            <div class="nowrap">
                 <?php $r = $item->user_rating;
                 for ($i = 1; $i <= $r; $i++) {
                     echo '<i class="fa-solid fa-star fa-active"></i>';
@@ -36,14 +36,6 @@
                     echo '<i class="fa-solid fa-star fa-inactive"></i>';
                 } ?>
             </div>
-
-            <?php $formatter = new IntlDateFormatter('nl_NL', IntlDateFormatter::LONG, IntlDateFormatter::NONE);
-            if (strlen($item->user_read_at)): ?>
-                <span style="color: silver"><?= $formatter->format(strtotime($item->user_read_at)) ?></span><br>
-            <?php else:
-                // Goodreads doet soms rare dingen met de leesdatum, dit is de datum toegevoegd aan mijn profiel ?>
-                <span style="color: silver"><?= $formatter->format(strtotime($item->user_date_added)) ?></span><br>
-            <?php endif ?>
 
         <?php endif ?>
         </p>
