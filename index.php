@@ -6,7 +6,8 @@ Kirby::plugin('mirthe/mygoodreads', [
         'accountnr' => option('goodreads.accountnr')
     ],
     'snippets' => [
-        'goodreads-books-read' => __DIR__ . '/snippets/books.php'
+        'goodreads-books-read' => __DIR__ . '/snippets/books.php',
+        'goodreads-books-currently-reading' => __DIR__ . '/snippets/books-current.php'
     ],
     'translations' => [
         // hoe forceer ik mijn site naar NL?
