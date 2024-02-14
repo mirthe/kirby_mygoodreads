@@ -19,6 +19,10 @@ Include the snippet to display your books on a page
 
     <?php snippet('goodreads-books-read'); ?>
 
+Recently added a listing of books I'm currently reading for my Now page, with an optional limit
+
+    <?php snippet('goodreads-books-currently-reading', ['limit' => 3 ]) ?>
+
 ## Example 
 
 <img src="example.png" alt="Example of books read">
