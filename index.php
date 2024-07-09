@@ -3,7 +3,8 @@
 Kirby::plugin('mirthe/mygoodreads', [
     'options' => [
         'apiKey'    => option('goodreads.apiKey'),
-        'accountnr' => option('goodreads.accountnr')
+        'accountnr' => option('goodreads.accountnr'),
+        'numberofblocks' => 30
     ],
     'snippets' => [
         'goodreads-books-read' => __DIR__ . '/snippets/books.php',

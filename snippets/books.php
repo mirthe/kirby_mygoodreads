@@ -1,11 +1,13 @@
 <?php include('getbooks.php'); ?>
+<?php $blockcount = 0; ?>
 
 <div class="masonry">
 <?php foreach($rss->channel->item as $item): ?>
-
+    
 <?php if (strlen($item->user_read_at)): ?>
 <div class="block block--boek">
-
+        
+    <?php $blockcount++ ?>
     <a href="https://www.goodreads.com/search?q=<?= $item->isbn ?>"><img class="block--img" src="<?= $item->book_large_image_url ?>" alt="Cover <?= $item->title ?> - <?= $item->author_name ?>"></a>
     
     <div class="block--body">
@@ -45,6 +47,8 @@
 
 </div>
 <?php endif ?>
+
+<?php if ($blockcount == option('mirthe.mygoodreads.numberofblocks')) {break;} ?>
 
 <?php endforeach ?>
 </div>
