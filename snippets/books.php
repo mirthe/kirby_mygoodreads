@@ -42,7 +42,7 @@
         <?php endif ?>
         </p>
 
-        <?= $item->user_review ?>
+        <p class="review"><?= $item->user_review ?></p>
     </div>
 
 </div>
