@@ -8,10 +8,10 @@
 <div class="block block--boek">
         
     <?php $blockcount++ ?>
-    <a href="https://www.goodreads.com/search?q=<?= $item->isbn ?>"><img class="block--img" src="<?= $item->book_large_image_url ?>" alt="Cover <?= $item->title ?> - <?= $item->author_name ?>"></a>
+    <a href="<?= $item->link ?>"><img class="block--img" src="<?= $item->book_large_image_url ?>" alt="Cover <?= $item->title ?> - <?= $item->author_name ?>"></a>
     
     <div class="block--body">
-        <p><a href="https://www.goodreads.com/search?q=<?= $item->isbn ?>"><?= $item->title ?></a> - <?= $item->author_name ?><br>
+        <p><a href="<?= $item->link ?>"><?= $item->title ?></a> - <?= $item->author_name ?><br>
         <small><?= $item->book_published ?>
         <?php if($item->book->num_pages > 0): ?>
             &bull; <?= $item->book->num_pages ?> bladzijden
